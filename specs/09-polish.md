@@ -6,6 +6,7 @@ Governing specs: `00-overview.md` (a11y/SEO baseline), `03-frontend-spec.md`
 
 - **File(s):** `app/*/page.tsx` (`metadata` export in each route)
 - **Done when:** Every route has a distinct, accurate `<title>` and `<meta name="description">`, plus `og:title`/`og:description`/`og:image` for social sharing.
+- **Specific check:** confirm `app/layout.tsx`'s root `<html lang>` attribute reads `"es"` and its `metadata` export contains real Spanish copy — not the `create-next-app` English placeholder. This is easy to miss since the site builds and runs fine either way; verify it explicitly rather than assuming it was caught earlier. See `06-content-layer.md` task 2.3.
 - **Copilot prompt:**
   > Add a Next.js `metadata` export to each page (`app/page.tsx`, `app/menu/page.tsx`, `app/about/page.tsx`, `app/contact/page.tsx`[, `app/gallery/page.tsx`]) with a distinct title, description, and OpenGraph tags appropriate to that page's content.
 
