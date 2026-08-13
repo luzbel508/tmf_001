@@ -4,6 +4,8 @@ import { motion } from "motion/react";
 import { useState } from "react";
 import type { MenuItem } from "../content/types";
 
+const assetPath = (path: string) => `/tmf_001${path}`;
+
 const currencyFormatter = new Intl.NumberFormat("es-MX", {
   style: "currency",
   currency: "MXN",
@@ -30,7 +32,7 @@ export function MenuCard({ item }: MenuCardProps) {
       <div className="relative overflow-hidden bg-cream">
         {!imageFailed && item.image ? (
           <img
-            src={item.image}
+            src={assetPath(item.image)}
             alt={item.name}
             className="h-56 w-full object-cover transition-transform duration-200 ease-out group-hover:scale-[1.05]"
             onError={() => setImageFailed(true)}

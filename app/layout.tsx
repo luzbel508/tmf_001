@@ -17,9 +17,37 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lucy’s Kitchen | Tex-Mex y Mexicana en Pachuca",
+  metadataBase: new URL("https://rigo.github.io/tmf_001"),
+  title: {
+    default: "Lucy’s Kitchen | Tex-Mex en Pachuca",
+    template: "%s | Lucy’s Kitchen",
+  },
   description:
-    "Lucy’s Kitchen en Pachuca sirve Tex-Mex, americana y mexicana con hamburguesas, fajitas, enchiladas y platillos de la casa.",
+    "Lucy’s Kitchen en Pachuca sirve tex-mex, hamburguesas, fajitas, enchiladas y platillos caseros en un ambiente cálido y familiar.",
+  applicationName: "Lucy’s Kitchen",
+  openGraph: {
+    title: "Lucy’s Kitchen | Tex-Mex en Pachuca",
+    description:
+      "Tex-mex, hamburguesas, fajitas y platillos de la casa en un lugar cálido para comer y compartir en Pachuca.",
+    siteName: "Lucy’s Kitchen",
+    locale: "es_MX",
+    type: "website",
+    images: [
+      {
+        url: "/images/gallery/food-01.jpg",
+        width: 1200,
+        height: 900,
+        alt: "Platillo tex-mex servido en Lucy’s Kitchen",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lucy’s Kitchen | Tex-Mex en Pachuca",
+    description:
+      "Tex-mex, hamburguesas, fajitas y platillos de la casa en un lugar cálido para comer y compartir en Pachuca.",
+    images: ["/images/gallery/food-01.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
