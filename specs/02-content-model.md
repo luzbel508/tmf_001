@@ -46,7 +46,7 @@ interface DayHours {
 interface BusinessInfo {
   name: "Lucy's Kitchen";
   cuisine: string[];       // ["Americana", "Mexicana", "Tex-Mex"]
-  address: string;         // "Boulevard San Alfonso 99, Local 2b, Zempoala, HG 43845"
+  address: string;         // "Blvd. San Alfonso 99-Mz 7 Lt 2 Local 1A, Ejido de, 43845 Jagüey de Téllez, Hgo."
   phone: string;           // for tel: links — E.164-ish, e.g. "+527711234567"
   whatsapp: string;        // digits only, no "+", no spaces, country code included — e.g. "527711234567"
                             // consumed as `https://wa.me/${businessInfo.whatsapp}` — wrong format here breaks the link silently

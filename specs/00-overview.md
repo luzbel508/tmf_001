@@ -6,7 +6,7 @@ A portfolio-quality marketing website for **Lucy's Kitchen**, a Tex-Mex / Americ
 
 - **Name:** Lucy's Kitchen (Pachuca)
 - **Cuisine:** Americana • Mexicana • Tex-Mex
-- **Address:** Boulevard San Alfonso 99, Local 2b, Zempoala, HG 43845
+- **Address:** Blvd. San Alfonso 99-Mz 7 Lt 2 Local 1A, Ejido de, 43845 Jagüey de Téllez, Hgo.
 - **Ordering:** The restaurant does **not** accept online orders. This is an informational / brand site whose only job is to get people to visit or call — not a transactional platform.
 
 ## Goal

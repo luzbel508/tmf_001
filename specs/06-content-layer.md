@@ -14,7 +14,7 @@ Governing specs: `02-content-model.md`
 - **File(s):** `content/business-info.ts`
 - **Done when:** A single exported `businessInfo: BusinessInfo` object exists with the real address, phone, WhatsApp number, hours, and a working Google Maps embed URL — no placeholder values remaining.
 - **Copilot prompt:**
-  > Create `content/business-info.ts` exporting a `businessInfo` object matching the `BusinessInfo` type. Use this real data: name "Lucy's Kitchen", cuisine ["Americana", "Mexicana", "Tex-Mex"], address "Boulevard San Alfonso 99, Local 2b, Zempoala, HG 43845". [Provide real phone, WhatsApp number, hours, and map embed URL directly — don't let Copilot invent these.]
+  > Create `content/business-info.ts` exporting a `businessInfo` object matching the `BusinessInfo` type. Use this real data: name "Lucy's Kitchen", cuisine ["Americana", "Mexicana", "Tex-Mex"], address "Blvd. San Alfonso 99-Mz 7 Lt 2 Local 1A, Ejido de, 43845 Jagüey de Téllez, Hgo.". [Provide real phone, WhatsApp number, hours, and map embed URL directly — don't let Copilot invent these.]
 
 ## 2.3 Fix root layout metadata and language
 
