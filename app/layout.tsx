@@ -15,14 +15,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lucy\'s Kitchen",
-  description: "Lucy\'s Kitchen - Pachuca: Tex-Mex & Americana",
+  title: "Lucy’s Kitchen | Tex-Mex y Mexicana en Pachuca",
+  description:
+    "Lucy’s Kitchen en Pachuca sirve Tex-Mex, americana y mexicana con hamburguesas, fajitas, enchiladas y platillos de la casa.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${anton.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
