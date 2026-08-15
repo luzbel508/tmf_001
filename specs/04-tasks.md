@@ -12,7 +12,7 @@ Handing Copilot the entire roadmap at once invites it to jump ahead, assume stru
 2. [`06-content-layer.md`](./06-content-layer.md) — types + real data
 3. [`07-shared-components.md`](./07-shared-components.md) — reusable components
 4. [`08-pages.md`](./08-pages.md) — the actual routes
-5. [`09-polish.md`](./09-polish.md) — SEO, a11y, mobile, Lighthouse
+5. [`09-polish.md`](./09-polish.md) — SEO, a11y, mobile (Lighthouse optional quality audit)
 6. [`10-deploy.md`](./10-deploy.md) — ship it
 
 ## How to work through a task file

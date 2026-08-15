@@ -33,7 +33,19 @@ Governing specs: `00-overview.md` (a11y/SEO baseline), `03-frontend-spec.md`
 - **Done when:** Hero, gallery (parallax/horizontal-scroll), and mobile nav drawer all behave correctly at common mobile viewport widths (test at minimum 375px and 414px) — no overflow, no broken animations, no unreachable content.
 - **Note:** Manually test in devtools responsive mode across all pages — this is the highest-risk area given the animation-heavy design decisions.
 
-## 5.6 Lighthouse pass
+## 5.6 Lighthouse (optional quality audit)
 
-- **Done when:** A Lighthouse run (Chrome DevTools or CLI) on the built static export shows reasonable scores across Performance, Accessibility, Best Practices, and SEO — no glaring failures (e.g. missing alt text flagged again, huge unoptimized images).
-- **Note:** Run this against the actual static export output, not the dev server, since static-export-specific issues (like unoptimized `next/image` usage) won't show up the same way in dev mode.
+- Lighthouse is useful supplementary feedback for Performance, Accessibility, Best Practices, and SEO.
+- Lighthouse is NOT required to pass Phase 5.
+- Phase 5 completion is determined by manual verification of:
+  - SEO metadata
+  - favicon/browser-tab treatment
+  - image alt text
+  - contrast
+  - mobile behavior
+  - lint
+  - TypeScript
+  - production build
+  - static-export correctness
+- Do not make code changes solely to chase Lighthouse scores.
+- Lighthouse may be run later as an additional post-build or post-deployment quality audit.
